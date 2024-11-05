@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.gamin_campus {
+  background-image: url(./assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.gamin_campus img {
+  max-width: 450px;
+  height: auto;
+}
+
+.gamin_campus h2 {
+  font-size: 1.2rem;
+  color: #ff6a00;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 106, 0, 0.8);
+}
+
+.gamin_campus button {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #e6a9007c;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  font-family: "Orbitron", sans-serif, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff6a00;
+  border-color: #ff6a00;
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 106, 0, 0.8);
+}
+
+.header_container p {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 255, 255, 0.5);
+  margin: 20px auto;
+  width: 80%;
+}
+
+.les_infos {
+  display: flex;
+  flex-direction: row;
+  background-color: #1f1e1e;
+  color: white;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.les_infos button {
+  background-color: #1818177c;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  color: #fff;
+}
+
+.infos1,
+.infos2,
+.infos3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: medium;
+  text-align: center;
+}
+
+.les_news {
+  background-color: rgb(163 159 159 / 5%);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  color: #1f1e1e;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.les_news button {
+  background-color: transparent;
+  color: #000;
+}
+
+.activités {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(163 159 159 / 5%);
+  color: #000;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.activite1,
+.activite2,
+.activite3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: medium;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(197, 49, 185);
+}
+
+.contats {
+  display: flex;
+  flex-direction: row;
+  color: #000;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.contats img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.parents {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.infos_pratique {
+  display: flex;
+  flex-direction: column;
+}
+
+.ils_parle_de_nous {
+  display: flex;
+  flex-direction: row;
+  color: #000;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: white;
+  align-items: center;
+}
+
+footer img {
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .gamin_campus h2 {
+    font-size: 1rem;
+  }
+
+  .gamin_campus button {
+    width: auto;
+  }
+
+  .les_infos {
+    flex-direction: column;
+  }
+
+  .les_infos button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .les_news,
+  .activités {
+    flex-direction: column;
+  }
+
+  .activite1,
+  .activite2,
+  .activite3,
+  .infos1,
+  .infos2,
+  .infos3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ils_parle_de_nous {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer img {
+    width: 80px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .gamin_campus h2 {
+    font-size: 0.9rem;
+  }
+
+  .gamin_campus button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .les_infos,
+  .les_news,
+  .activités {
+    padding: 10px;
+  }
+
+  .les_infos,
+  .les_news,
+  .activités {
+    flex-direction: column;
+  }
+
+  .les_infos button {
+    margin-top: 10px;
+  }
+
+  .activite1,
+  .activite2,
+  .activite3,
+  .infos1,
+  .infos2,
+  .infos3 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .contats img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+}
